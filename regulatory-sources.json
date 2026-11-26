@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "notice": "Official entry points only. Changes are not validated legal amendments; human review required.",
+  "sources": [
+    {
+      "id": "uk-cqc",
+      "country": "UK",
+      "authority": "CQC",
+      "kind": "regulator",
+      "url": "https://www.cqc.org.uk/guidance-regulation/providers/registration/scope-registration/regulated-activities/diagnostic-and-screening-procedures"
+    },
+    {
+      "id": "uk-ukas",
+      "country": "UK",
+      "authority": "UKAS",
+      "kind": "accreditation",
+      "url": "https://www.ukas.com/accreditation/standards/medical-laboratory-accreditation/"
+    },
+    {
+      "id": "us-clia",
+      "country": "US",
+      "authority": "CMS",
+      "kind": "regulation",
+      "url": "https://www.cms.gov/medicare/health-safety-standards/clinical-laboratory-improvement-amendments-clia/clia-regulations-compliance"
+    },
+    {
+      "id": "us-ecfr",
+      "country": "US",
+      "authority": "eCFR",
+      "kind": "law",
+      "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-493"
+    },
+    {
+      "id": "au-nata",
+      "country": "AU",
+      "authority": "NATA",
+      "kind": "accreditation",
+      "url": "https://nata.com.au/accreditation/medical-laboratory-accreditation-iso-15189/"
+    },
+    {
+      "id": "kr-law",
+      "country": "KR",
+      "authority": "Korean National Law Information Center",
+      "kind": "law",
+      "url": "https://www.law.go.kr/"
+    },
+    {
+      "id": "jp-law",
+      "country": "JP",
+      "authority": "e-Gov",
+      "kind": "law",
+      "url": "https://laws.e-gov.go.jp/"
+    },
+    {
+      "id": "ae-dha",
+      "country": "AE",
+      "authority": "DHA",
+      "kind": "regulator",
+      "url": "https://www.dha.gov.ae/"
+    },
+    {
+      "id": "br-anvisa",
+      "country": "BR",
+      "authority": "ANVISA",
+      "kind": "regulator",
+      "url": "https://www.gov.br/anvisa/pt-br"
+    },
+    {
+      "id": "iso-15189",
+      "country": "ALL",
+      "authority": "ISO",
+      "kind": "licensed-standard-metadata",
+      "url": "https://committee.iso.org/standard/15189"
+    }
+  ]
+}
