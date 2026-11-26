@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "updated": "2026-11-26",
+  "note": "Public API discovery catalog. Access and legal applicability require runtime verification. No legal compliance claims.",
+  "sources": [
+    {
+      "id": "uk-legislation",
+      "country": "UK",
+      "authority": "The National Archives",
+      "access": "no_key",
+      "kind": "official_api",
+      "documentation": "https://www.legislation.gov.uk/openapi",
+      "endpoint": "https://www.legislation.gov.uk/uksi/2024/data.feed",
+      "format": "atom",
+      "scope": "UK legislation metadata/feed",
+      "license": "OGL v3"
+    },
+    {
+      "id": "us-federalregister",
+      "country": "US",
+      "authority": "Office of the Federal Register",
+      "access": "no_key",
+      "kind": "official_api",
+      "documentation": "https://www.federalregister.gov/developers/documentation/api/v1",
+      "endpoint": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=clinical%20laboratory&per_page=20&order=newest",
+      "format": "json",
+      "scope": "Federal Register notices and rules; not current consolidated legal text"
+    },
+    {
+      "id": "us-ecfr",
+      "country": "US",
+      "authority": "eCFR",
+      "access": "no_key",
+      "kind": "official_api",
+      "documentation": "https://www.ecfr.gov/developers/documentation/api/v1",
+      "endpoint": "https://www.ecfr.gov/api/versioner/v1/structure/current/title-42.json",
+      "format": "json",
+      "scope": "CFR title 42 structure; relevant Part 493 requires clause selection"
+    },
+    {
+      "id": "eu-cellar",
+      "country": "EU",
+      "authority": "Publications Office of the EU",
+      "access": "no_key",
+      "kind": "official_api",
+      "documentation": "https://op.europa.eu/en/web/about-us/cellar",
+      "endpoint": "https://publications.europa.eu/webapi/rdf/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%201",
+      "format": "json_or_xml",
+      "scope": "EU legal metadata; national transposition not covered"
+    },
+    {
+      "id": "kr-law",
+      "country": "KR",
+      "authority": "National Law Information Center",
+      "access": "registration_oc",
+      "kind": "official_api",
+      "documentation": "https://open.law.go.kr/LSO/main.do",
+      "scope": "Korean law; requires OC and application"
+    },
+    {
+      "id": "jp-egov",
+      "country": "JP",
+      "authority": "e-Gov",
+      "access": "verification_required",
+      "kind": "public_website",
+      "documentation": "https://laws.e-gov.go.jp/",
+      "scope": "Japanese legislation"
+    },
+    {
+      "id": "au-nata",
+      "country": "AU",
+      "authority": "NATA",
+      "access": "public_web_no_confirmed_api",
+      "kind": "public_website",
+      "documentation": "https://nata.com.au/",
+      "scope": "Accreditation information; not a law API"
+    },
+    {
+      "id": "ae-dha",
+      "country": "AE",
+      "authority": "Dubai Health Authority",
+      "access": "public_web_no_confirmed_api",
+      "kind": "public_website",
+      "documentation": "https://www.dha.gov.ae/",
+      "scope": "Dubai regulator, not all UAE"
+    },
+    {
+      "id": "br-anvisa",
+      "country": "BR",
+      "authority": "ANVISA",
+      "access": "public_web_no_confirmed_api",
+      "kind": "public_website",
+      "documentation": "https://www.gov.br/anvisa/pt-br",
+      "scope": "Brazil regulator"
+    }
+  ]
+}
