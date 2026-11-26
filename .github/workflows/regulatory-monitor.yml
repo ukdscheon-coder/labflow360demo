@@ -1,0 +1,39 @@
+name: Regulatory official-source change monitor
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check official source pages
+        run: python scripts/regulatory_monitor.py
+      - name: Commit monitor metadata only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add regulatory-monitor.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update regulatory source monitoring metadata"
+            git push
+          fi
+      - name: Open review issue for detected source changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,subprocess,datetime
+          d=json.load(open('regulatory-monitor.json'))
+          changed=[x for x in d['sources'] if x.get('changed')]
+          if changed:
+              body="Official page content changed. **This is NOT confirmation of a legal amendment.** Human reviewer must inspect effective dates, jurisdiction, scope and official document versions.\n\n"+ "\n".join("- "+x['id']+": "+x['url'] for x in changed)
+              subprocess.run(['gh','issue','create','--title','Regulatory source changes need human review '+datetime.date.today().isoformat(),'--body',body],check=True)
+          PY
