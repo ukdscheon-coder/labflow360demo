@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-11-27T15:36:20.318506+00:00",
+  "note": "Content changes are NOT confirmed legal amendments. No automatic legal activation.",
+  "sources": [
+    {
+      "id": "uk-legislation",
+      "country": "UK",
+      "authority": "The National Archives",
+      "access": "no_key",
+      "endpoint": "https://www.legislation.gov.uk/uksi/2024/data.feed",
+      "status": "fetched",
+      "review_required": true,
+      "http_status": 200,
+      "sha256": "571946cba27616a7d1ca7a8de041cbacdad8e75f57423f7fa0e1320bf0acec43",
+      "changed": false,
+      "content_type": "application/atom+xml;charset=utf-8",
+      "bytes_sampled": 152163
+    },
+    {
+      "id": "us-federalregister",
+      "country": "US",
+      "authority": "Office of the Federal Register",
+      "access": "no_key",
+      "endpoint": "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bterm%5D=clinical%20laboratory&per_page=20&order=newest",
+      "status": "fetched",
+      "review_required": true,
+      "http_status": 200,
+      "sha256": "3ed1aa7075e42be16aef4cab0791905070f8cc893ad52c8d902cc43c2006986b",
+      "changed": false,
+      "content_type": "application/json; charset=utf-8",
+      "bytes_sampled": 53501
+    },
+    {
+      "id": "us-ecfr",
+      "country": "US",
+      "authority": "eCFR",
+      "access": "no_key",
+      "endpoint": "https://www.ecfr.gov/api/versioner/v1/structure/current/title-42.json",
+      "status": "fetched",
+      "review_required": true,
+      "http_status": 200,
+      "sha256": "a166bbbbc933b891a08a20671e5a7d5e82a07c319654938016c83fe93981daf6",
+      "changed": false,
+      "content_type": "application/json; charset=utf-8",
+      "bytes_sampled": 1000000
+    },
+    {
+      "id": "eu-cellar",
+      "country": "EU",
+      "authority": "Publications Office of the EU",
+      "access": "no_key",
+      "endpoint": "https://publications.europa.eu/webapi/rdf/sparql?query=SELECT%20%3Fs%20WHERE%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20LIMIT%201",
+      "status": "fetched",
+      "review_required": true,
+      "http_status": 200,
+      "sha256": "7d2fb7d3a4b37d3c87d191b7dcc529757a28f37158a8d4b0608229465e6a1869",
+      "changed": false,
+      "content_type": "application/json",
+      "bytes_sampled": 218
+    },
+    {
+      "id": "kr-law",
+      "country": "KR",
+      "authority": "National Law Information Center",
+      "access": "registration_oc",
+      "endpoint": null,
+      "status": "not_attempted",
+      "review_required": true
+    },
+    {
+      "id": "jp-egov",
+      "country": "JP",
+      "authority": "e-Gov",
+      "access": "verification_required",
+      "endpoint": null,
+      "status": "not_attempted",
+      "review_required": true
+    },
+    {
+      "id": "au-nata",
+      "country": "AU",
+      "authority": "NATA",
+      "access": "public_web_no_confirmed_api",
+      "endpoint": null,
+      "status": "not_attempted",
+      "review_required": true
+    },
+    {
+      "id": "ae-dha",
+      "country": "AE",
+      "authority": "Dubai Health Authority",
+      "access": "public_web_no_confirmed_api",
+      "endpoint": null,
+      "status": "not_attempted",
+      "review_required": true
+    },
+    {
+      "id": "br-anvisa",
+      "country": "BR",
+      "authority": "ANVISA",
+      "access": "public_web_no_confirmed_api",
+      "endpoint": null,
+      "status": "not_attempted",
+      "review_required": true
+    }
+  ]
+}
