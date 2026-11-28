@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T15:36:20.318506+00:00",
+  "checked_at": "2026-11-28T14:32:44.381432+00:00",
   "note": "Content changes are NOT confirmed legal amendments. No automatic legal activation.",
   "sources": [
     {
@@ -11,8 +11,8 @@
       "status": "fetched",
       "review_required": true,
       "http_status": 200,
-      "sha256": "571946cba27616a7d1ca7a8de041cbacdad8e75f57423f7fa0e1320bf0acec43",
-      "changed": false,
+      "sha256": "024c558f0ed4d1d8c8f05044d3fa863f0a6cffb342cf7bc4fb5b025ae16dd6c2",
+      "changed": true,
       "content_type": "application/atom+xml;charset=utf-8",
       "bytes_sampled": 152163
     },
